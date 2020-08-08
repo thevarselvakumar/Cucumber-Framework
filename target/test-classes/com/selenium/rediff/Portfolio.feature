@@ -24,7 +24,7 @@ Feature: Title of your feature
     Given I open chrome
     And I go to loginURL
     And I Login inside application
-    |thevarselvakumar@gmail.com| Winter123!|
+    |ashishthakur1983| pass@1234|
 
   @CreatePortFolio
   Scenario: Creating a Portfolio
