@@ -5,6 +5,7 @@ import java.util.List;
 // same object for 1 scenario
 import com.selenium.webdriver.WebConnector;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class ApplicationSteps{
@@ -28,5 +29,22 @@ public class ApplicationSteps{
 
 
 	}
+	
+	//@And("^I go to (.*)$")
+@Given("^I select depaturecity as (.*)$")
+public void i_select_depaturecity_as(String data) {
+   
+	con.select(data);
+}
+
+@Given("I select destinationcity as (.*)")
+public void i_select_destinationcity_as(String data) {
+   
+	con.select_destinatin(data);
+	
+	
+}
+
+
 	
 }
