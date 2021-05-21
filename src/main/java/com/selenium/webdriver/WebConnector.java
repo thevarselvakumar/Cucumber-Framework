@@ -61,7 +61,7 @@ public class WebConnector {
 	public void openBrowser(String browserName) {
 
 			if(browserName.equals("chrome")) {
-				System.setProperty("webdriver.chrome.driver","C:\\Users\\selva\\Documents\\New folder (2)\\selenium driver\\New folder\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\Users\\selva\\Documents\\New folder (2)\\selenium driver\\New folder\\New folder\\chromedriver.exe");
 				driver= new ChromeDriver();
 
 			}else if(browserName.equals("ie")) {
@@ -168,6 +168,17 @@ public class WebConnector {
 		waitForPageToLoad();
 	}
 	
+	
+	public void select(String data) {
+		
+		select("abc_xpath", data);
+	}
+	
+	
+public void select_destinatin(String data) {
+		
+		select("xyz_xpath", data);
+	}
 	public void acceptAlertIfPresent() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 15);

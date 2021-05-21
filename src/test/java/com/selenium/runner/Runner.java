@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
         plugin= {
                 "html:target/site/cucumber-html",
                 "json:target/cucumber1.json"},
-        tags= {"@Login"," ~@CreatePortFolio","~@DeletePortFolio"}
+        tags= {" @Flight, ~@Login"," ~@CreatePortFolio","~@DeletePortFolio"}
 )
 
 public class Runner {
